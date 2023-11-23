@@ -2,37 +2,16 @@ import React from "react";
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
+import Navbar from "./navbar";
+import Cards from "./cards";
+import Footer from "./footer";
+import Jumbotron from "./jumbotron";
 
 //create your first component
 const Home = () => {
 	return (
 		<div className="Proyect">
-			<nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" >
-				<div class="container-fluid">
-					<a class="navbar-brand" href="#">Start Bootstrap</a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-
-					<div class="collapse navbar-collapse flex-inherit" id="navbarNav">
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">About</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Services</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Contact</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-
+			<Navbar/>
 			{/* Aqui empieza el div para el body y las cartas. */}
 
 			<div class="container">
@@ -47,8 +26,9 @@ const Home = () => {
 					</hr>
 				</div>
 				{/* Aquí empiezan las cartas */}
-				<div class="cards"></div>
+					<div className="d-flex"><Cards/></div>
 			</div>
+			<div className="end"><footer/></div>
 		</div>
 	);
 };
