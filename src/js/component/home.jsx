@@ -9,7 +9,7 @@ import Jumbotron from "./jumbotron";
 //create your first component
 const Home = () => {
 	return (
-		<div className="Proyect" style={{scrollBehavior: "smooth",  overflowY:"auto"}}>
+		<div className="Proyect" style={{height: "auto", scrollBehavior: "smooth",  overflowY:"auto"}}>
 			<Navbar/>
 			{/* Aqui empieza el div para el body y las cartas. */}
 

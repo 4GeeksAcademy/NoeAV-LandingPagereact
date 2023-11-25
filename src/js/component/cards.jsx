@@ -1,6 +1,5 @@
 import React from "react";
 
-
 //create your first component
 const Cards = () => {
     const list = [1,2,3,4]
