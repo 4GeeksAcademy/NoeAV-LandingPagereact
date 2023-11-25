@@ -13,7 +13,7 @@ const Cards = () => {
          <h5 className="card-title">Card title</h5>
          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
          <hr class="my-4"></hr>
-         <a href="#" className="btn btn-primary" style={{display:"block"}}>Go somewhere</a>
+         <a href="#" className="btn btn-primary" style={{display:"block"}}>find out more!</a>
         </div>
       </div>
     )
